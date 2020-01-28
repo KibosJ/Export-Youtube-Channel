@@ -1,7 +1,7 @@
-# Version 0.2
+# Version 0.3
 
 $channelname = Read-Host "What is the name of the channel? (This is the username of the channel uploader)"
-$key = "" # Your YouTube API key
+$key = Read-Host "Enter your Youtube API key"
 $file = "C:\dump\$channelname.txt"
 
 # Get the channel ID
@@ -42,3 +42,4 @@ else {
 }
 }
 Until (!$items)
+
